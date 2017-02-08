@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MethodsAndConstructors.iml" filepath="$PROJECT_DIR$/MethodsAndConstructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodsAndConstructors/MethodsAndConstructors.iml" filepath="$PROJECT_DIR$/MethodsAndConstructors/MethodsAndConstructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodsAndConstructors1.iml" filepath="$PROJECT_DIR$/MethodsAndConstructors1.iml" />
     </modules>
   </component>
 </project>
