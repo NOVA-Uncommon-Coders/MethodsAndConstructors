@@ -44,21 +44,22 @@ public class Dog {
 
     public boolean isHowlsAtMoon() {
 
-        if (howls == false)
-        return HowlsAtMoon;
+        return this.HowlsAtMoon;
+
     }
+
 
     public void setHowlsAtMoon(boolean howlsAtMoon) {
-        HowlsAtMoon = howlsAtMoon;
+       // HowlsAtMoon = howlsAtMoon;
+
+        if (this.color.equals("red")){
+            HowlsAtMoon = howlsAtMoon;
+
+        }
     }
 
-    public Dog(String name, String color, int age, int legs, boolean howlsAtMoon) {
-        this.name = name;
-        this.color = color;
-        Age = age;
-        Legs = legs;
-        HowlsAtMoon = howlsAtMoon;
+
 
 
     }
-}
+

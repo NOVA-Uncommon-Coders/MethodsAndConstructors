@@ -39,7 +39,7 @@ public class House {
     }
 
     public void setRooms(int rooms) {
-        if (rooms == >1)
+        if (rooms >1)
         this.rooms = rooms;
     }
 

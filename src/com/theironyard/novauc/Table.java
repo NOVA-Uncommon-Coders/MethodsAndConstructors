@@ -40,18 +40,20 @@ public class Table {
         this.legs = legs;
     }
 
-    public boolean isOak() {
-
-        if(woodColor==red);
-        return oak;
-    }
-
-    public void setOak(boolean oak) {
+    public Table(boolean oak) {
         this.oak = oak;
     }
 
-    public void changeWoodType(){
-        woodType = woodColor.equals("yellow") ? "oak":"mahogany";
+    public boolean isOak() {
+
+    return this.oak;
+    }
+
+
+    public void changeWoodType() {
+        woodType = woodColor.equals("yellow") ? "oak" : "mahogany";
+
     }
 }
+
 

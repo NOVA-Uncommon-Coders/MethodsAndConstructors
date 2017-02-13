@@ -56,8 +56,10 @@ public class Comedian {
         return laughs;
     }
 
-    public void setLaughs(laughs){
-        if(2 * 2 < 4){laughs = false};
+    public void setLaughs (boolean laughs){
+        if(this.laughs == true){
+            System.out.println("HAHAHAH");
+        }
     }
 }
 
