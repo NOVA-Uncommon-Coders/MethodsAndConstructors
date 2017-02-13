@@ -27,7 +27,7 @@ public class Tree {
     public void setType(String type) {
         this.type = type;
     }
-    
+
 
 
     public boolean isAlive() {
