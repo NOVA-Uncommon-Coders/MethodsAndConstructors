@@ -12,10 +12,17 @@ public class Children {
 
 
  public Children(int shoeSize) {
+  int size = 8;
+
+  if (size == 8) {
+   System.out.println("Input another siz: ");
+
+  }
+
   this.shoeSize = shoeSize;
  }
 
-}
+
 
  public int getAge() {
   return age;

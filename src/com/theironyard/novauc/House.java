@@ -19,6 +19,7 @@ public class House {
     }
 
     public String getMaterial() {
+
         return material;
     }
 
@@ -27,6 +28,11 @@ public class House {
     }
 
     public String getColor() {
+        String color = "Blue";
+         if(color.equalsIgnoreCase("blue"));
+         System.out.println("Thank You");
+
+
         return color;
     }
 
@@ -39,6 +45,7 @@ public class House {
     }
 
     public void setAddress(int address) {
+
         this.address = address;
     }
 

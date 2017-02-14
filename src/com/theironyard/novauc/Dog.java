@@ -32,6 +32,7 @@ public class Dog {
     }
 
     public void setBreed(String breed) {
+
         this.breed = breed;
     }
 
@@ -40,6 +41,10 @@ public class Dog {
     }
 
     public void setAge(int age) {
+        int num = 100;
+        if (num != 100)
+            System.out.println("Old Dog");
+
         this.age = age;
     }
 

@@ -20,6 +20,9 @@ public class Student {
     }
 
     public String getName() {
+    String name = "Johnny";
+    if(name.isEmpty())
+        System.out.println("Invalid name: ");
         return name;
     }
 

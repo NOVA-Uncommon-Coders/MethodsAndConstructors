@@ -13,7 +13,7 @@ public class Main {
         }
         else { System.out.println("not valid");}
         {
-            Children me = new Children();
+            Children name = new Children();
             me.getName();
             me.getAge();
 
