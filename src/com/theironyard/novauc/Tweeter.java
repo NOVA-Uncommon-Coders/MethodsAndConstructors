@@ -10,6 +10,14 @@ public class Tweeter {
     boolean isPrivate;
     boolean lessthan140Charcters;
 
+    public Tweeter(String text, String username, int timestamp, boolean isPrivate, boolean lessthan140Charcters) {
+        this.text = text;
+        this.username = username;
+        this.timestamp = timestamp;
+        this.isPrivate = isPrivate;
+        this.lessthan140Charcters = lessthan140Charcters;
+    }
+
     public String getText() {
         return text;
     }
@@ -32,15 +40,17 @@ public class Tweeter {
 
     public void setTimestamp(int timestamp) {
         this.timestamp = timestamp;
+        if (timestamp > 23) {
+            System.out.println("You post your tweets very late");
+        }
     }
 
     public boolean isPrivate() {
         return isPrivate;
     }
 
-    public void setPrivate(boolean aPrivate) {
-        isPrivate = aPrivate;
-    }
+    public void setPrivate(boolean aPrivate) {isPrivate = aPrivate;}
+
 
     public boolean isLessthan140Charcters() {
         return lessthan140Charcters;
@@ -48,5 +58,12 @@ public class Tweeter {
 
     public void setLessthan140Charcters(boolean lessthan140Charcters) {
         this.lessthan140Charcters = lessthan140Charcters;
+
     }
+
+
+
+
+
+
 }

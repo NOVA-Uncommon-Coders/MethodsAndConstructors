@@ -10,6 +10,14 @@ public class Wealth {
     int salary;
     boolean loveJob;
 
+    public Wealth(String occupation, String company, int yearsEmployed, int salary, boolean loveJob) {
+        Occupation = occupation;
+        Company = company;
+        this.yearsEmployed = yearsEmployed;
+        this.salary = salary;
+        this.loveJob = loveJob;
+    }
+
     public String getOccupation() {
         return Occupation;
     }
@@ -40,6 +48,9 @@ public class Wealth {
 
     public void setSalary(int salary) {
         this.salary = salary;
+        if (salary > 100000) {
+            System.out.println("That's a lot of money!");
+        }
     }
 
     public boolean isLoveJob() {
@@ -49,4 +60,5 @@ public class Wealth {
     public void setLoveJob(boolean loveJob) {
         this.loveJob = loveJob;
     }
+
 }

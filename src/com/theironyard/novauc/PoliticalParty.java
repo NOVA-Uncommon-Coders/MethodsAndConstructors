@@ -10,6 +10,14 @@ public class PoliticalParty {
     boolean american;
     boolean arrested;
 
+    public PoliticalParty(String affiliation, String candidate, int age, boolean american, boolean arrested) {
+        this.affiliation = affiliation;
+        this.candidate = candidate;
+        this.age = age;
+        this.american = american;
+        this.arrested = arrested;
+    }
+
     public String getAffiliation() {
         return affiliation;
     }
@@ -32,15 +40,16 @@ public class PoliticalParty {
 
     public void setAge(int age) {
         this.age = age;
+        if (age < 18) {
+            System.out.println("You are not allowed to vote yet");
+        }
     }
 
     public boolean isAmerican() {
         return american;
     }
 
-    public void setAmerican(boolean american) {
-        this.american = american;
-    }
+    public void setAmerican(boolean american) { this.american = american; }
 
     public boolean isArrested() {
         return arrested;

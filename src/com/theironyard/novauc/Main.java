@@ -3,7 +3,6 @@ package com.theironyard.novauc;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
         System.out.println("So the Journey Begins");
 
@@ -54,12 +53,13 @@ public class Main {
 
         System.out.println("This is entertainment!!!");
 
+        Movie Details = new Movie();
 
+        Details.title = "Independence Day";
 
+        Wealth Facts = new Wealth();
 
-
-
-
+        Facts.Occupation = "Programmer";
 
     }
 }

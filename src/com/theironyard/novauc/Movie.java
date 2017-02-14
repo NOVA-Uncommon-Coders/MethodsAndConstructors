@@ -10,6 +10,13 @@ public class Movie {
         int rating;
         String watchAgain;
 
+    public Movie(String title, String genre, String countryOrigin, int rating, String watchAgain) {
+        this.title = title;
+        this.genre = genre;
+        this.countryOrigin = countryOrigin;
+        this.rating = rating;
+        this.watchAgain = watchAgain;
+    }
 
     public String getTitle() { return title; }
 
@@ -25,11 +32,15 @@ public class Movie {
 
     public int getRating() { return rating; }
 
-    public void setRating(int rating) { this.rating = rating; }
+    public void setRating(int rating) {
+        this.rating = rating;
+        if (rating < 20) {
+            System.out.println("The movie sucks!!!");
+        }
+    }
 
     public String getWatchAgain() { return watchAgain; }
 
     public void setWatchAgain(String watchAgain) {this.watchAgain = watchAgain; }
-
 
 }

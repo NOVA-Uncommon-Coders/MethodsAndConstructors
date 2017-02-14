@@ -10,6 +10,14 @@ public class Car {
     boolean originalOwner;
     boolean moreThan100K;
 
+    public Car(String brand, String model, int horsepower, boolean originalOwner, boolean moreThan100K) {
+        this.brand = brand;
+        this.model = model;
+        this.horsepower = horsepower;
+        this.originalOwner = originalOwner;
+        this.moreThan100K = moreThan100K;
+    }
+
     public String getBrand() {
         return brand;
     }
