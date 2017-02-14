@@ -19,9 +19,12 @@ public class Cookie {
         this.size = size;
     }
 
+
+
     public String getType() {
         return type;
     }
+
 
     public void setType(String type) {
         this.type = type;
@@ -31,17 +34,27 @@ public class Cookie {
         return name;
     }
 
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public boolean isSweet() {
-        return isSweet;
-    }
-
+    public boolean isSweet() {return isSweet;}
     public void setSweet(boolean sweet) {
         isSweet = sweet;
     }
+    boolean user = true;
+
+    {
+     if(isSweet=true){
+         System.out.println("it's true");
+
+    }
+    else{
+         System.out.println("it's false");
+     }
+
+
 
     public String getMaker() {
         return maker;
@@ -58,4 +71,12 @@ public class Cookie {
     public void setSize(int size) {
         this.size = size;
     }
+
+    }
+
 }
+
+
+
+
+

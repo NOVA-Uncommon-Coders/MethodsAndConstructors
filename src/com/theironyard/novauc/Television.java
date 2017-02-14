@@ -36,9 +36,17 @@ public class Television {
     public void setColor(boolean color) {
         this.color = color;
     }
+    {
+        if(color=true){
+            System.out.println("it's true");
 
-    public String getMaterial() {
-        return material;
+        }
+        else{
+            System.out.println("it's false");{
+
+
+    public String getMaterial("getMaterial")); {
+
     }
 
     public void setMaterial(String material) {

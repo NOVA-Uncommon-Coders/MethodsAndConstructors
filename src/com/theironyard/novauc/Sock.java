@@ -56,9 +56,21 @@ public class Sock {
 
     public boolean isWool() {
         return isWool;
+    }public void setColor(boolean color) {
+    public void iswool(boolean isWool) (this.color = color);}
+
+
     }
 
-    public void setWool(boolean wool) {
-        isWool = wool;
-    }
-}
+
+
+
+    if(=true){
+        System.out.println("it's true");
+
+        else{
+        System.out.println("it's false");{
+
+            }
+
+
