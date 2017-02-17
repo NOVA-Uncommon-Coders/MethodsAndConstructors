@@ -4,11 +4,14 @@ package com.theironyard.novauc;
  * Created by Merlin on 2/7/17.
  */
 public class SpaceCraft {
-    String country;
-    String name;
-    int FastestSpeed;
-    int FuelMaximumCapacity;
-    boolean isOperational;
+    private String country;
+    private String name;
+    private int fastestspeed;
+    private int fuelMaximumCapacity;
+    private boolean isOperational;
+
+    public SpaceCraft() {
+    }
 
     public String getCountry() {
         return country; }
@@ -21,21 +24,20 @@ public class SpaceCraft {
         this.name = name; }
 
     public int getFastestSpeed() {
-        return FastestSpeed; }
-    public void setFastestSpeed(int fastestSpeed) {
+        return fastestspeed; }
+    public void setFastestSpeed(int fastestspeed) {
 
-        if (FastestSpeed < 26,000 && FastestSpeed > 35,000){
-            this.FastestSpeed = fastestSpeed;
-        }
-        else {
+        if (fastestspeed > 26000 && fastestspeed < 35000) {
+            this.fastestspeed = fastestspeed;
+        } else {
             System.out.println("Not a valid speed");
         }
     }
 
     public int getFuelMaximumCapacity() {
-        return FuelMaximumCapacity; }
+        return fuelMaximumCapacity; }
     public void setFuelMaximumCapacity(int fuelMaximumCapacity) {
-        FuelMaximumCapacity = fuelMaximumCapacity; }
+        this.fuelMaximumCapacity = fuelMaximumCapacity; }
 
     public boolean isOperational() {
         return isOperational; }
@@ -46,8 +48,8 @@ public class SpaceCraft {
 
         this.country = country;
         this.name = name;
-        this.FastestSpeed = fastestSpeed;
-        this.FuelMaximumCapacity = fuelMaximumCapacity;
+        this.fastestspeed = fastestSpeed;
+        this.fuelMaximumCapacity = fuelMaximumCapacity;
         this.isOperational = isOperational;
     }
 }

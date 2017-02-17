@@ -10,6 +10,10 @@ public class Vehicle {
     String color;
     boolean isClassicCar;
 
+    public Vehicle() {
+
+    }
+
     public String getMake() {
         return make;
     }
@@ -31,7 +35,11 @@ public class Vehicle {
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if (year > 2008 && year < 2010) {
+            this.year = year;
+        } else {
+            System.out.println("Not a valid year");
+        }
     }
 
     public String getColor() {

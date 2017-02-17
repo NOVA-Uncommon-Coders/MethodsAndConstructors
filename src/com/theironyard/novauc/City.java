@@ -6,11 +6,15 @@ package com.theironyard.novauc;
 
 public class City {
 
-    String NameOfCity;
-    String MayorName;
-    int population;
-    int yearEstablished;
-    boolean PopulationIncreasedLastYear;
+    private String NameOfCity;
+    private String MayorName;
+    private int population;
+    private int yearEstablished;
+    private boolean populationIncreasedLastYear;
+
+    public City() {
+
+    }
 
 
     public String getNameOfCity() {
@@ -29,7 +33,13 @@ public class City {
             return population; }
 
         public void setPopulation(int population) {
-            this.population = population; }
+
+            if (population > 2600000 && population < 2800000) {
+                this.population = population;
+            } else {
+                System.out.println("Not a valid population #");
+            }
+        }
 
         public int getYearEstablished() {
             return yearEstablished; }
@@ -38,16 +48,16 @@ public class City {
             this.yearEstablished = yearEstablished; }
 
         public boolean isPopulationIncreasedLastYear() {
-            return PopulationIncreasedLastYear; }
+            return populationIncreasedLastYear; }
 
         public void setPopulationIncreasedLastYear(boolean populationIncreasedLastYear) {
-            PopulationIncreasedLastYear = populationIncreasedLastYear; }
+            populationIncreasedLastYear = populationIncreasedLastYear; }
 
     public City(String nameOfCity, String mayorName, int population, int yearEstablished, boolean populationIncreasedLastYear) {
-        NameOfCity = nameOfCity;
-        MayorName = mayorName;
+        this.NameOfCity = nameOfCity;
+        this.MayorName = mayorName;
         this.population = population;
         this.yearEstablished = yearEstablished;
-        PopulationIncreasedLastYear = populationIncreasedLastYear;
+        this.populationIncreasedLastYear = populationIncreasedLastYear;
     }
 }

@@ -4,50 +4,56 @@ package com.theironyard.novauc;
  * Created by Merlin on 2/7/17.
  */
 public class Computer {
-    String OperatingSystem;
-    String BuiltBy;
-    int RAMinGB;
-    int ProcessorSpeedinGHz;
-    boolean SolidStateDrive;
+    private String operatingSystem;
+    private String builtBy;
+    private double rAMinGB;
+    private double processorSpeedinGHz;
+    private boolean solidStateDrive;
 
-    public String getOperatingSystem() {
-        return OperatingSystem; }
+    public Computer() {
 
-    public void setOperatingSystem(String operatingSystem) {
-        OperatingSystem = operatingSystem; }
-
-    public String getBuiltBy() {
-        return BuiltBy; }
-
-    public void setBuiltBy(String builtBy) {
-        BuiltBy = builtBy; }
-
-    public int getRAMinGB() {
-        return RAMinGB; }
-
-    public Computer(String operatingSystem, String builtBy, int RAMinGB, int processorSpeedinGHz, boolean solidStateDrive) {
-        this.OperatingSystem = operatingSystem;
-        this.BuiltBy = builtBy;
-        this.RAMinGB = RAMinGB;
-        this.ProcessorSpeedinGHz = processorSpeedinGHz;
-        this.SolidStateDrive = solidStateDrive;
     }
 
-    public void setRAMinGB(int RAMinGB) {
-        this.RAMinGB = RAMinGB; }
+    public String getOperatingSystem() {
+        return operatingSystem; }
 
-    public Computer(String operatingSystem) {
-        OperatingSystem = operatingSystem; }
+    public void setOperatingSystem(String operatingSystem) {
+        operatingSystem = operatingSystem; }
 
-    public int getProcessorSpeedinGHz() {
-        return ProcessorSpeedinGHz; }
+    public String getBuiltBy() {
+        return builtBy; }
 
-    public void setProcessorSpeedinGHz(int processorSpeedinGHz) {
-        ProcessorSpeedinGHz = processorSpeedinGHz; }
+    public void setBuiltBy(String builtBy) {
+        builtBy = builtBy; }
+
+    public double getRAMinGB() {
+        return rAMinGB; }
+
+    public Computer(String operatingSystem, String builtBy, double rAMinGB, double processorSpeedinGHz, boolean solidStateDrive) {
+        this.operatingSystem = operatingSystem;
+        this.builtBy = builtBy;
+        this.rAMinGB = rAMinGB;
+        this.processorSpeedinGHz = processorSpeedinGHz;
+        this.solidStateDrive = solidStateDrive;
+    }
+
+    public void setRAMinGB(double rAMinGB) {
+        if (rAMinGB > 7.9 && rAMinGB < 8.1) {
+            this.rAMinGB = rAMinGB;
+        } else {
+            System.out.println("not a valid RAM speed");
+        }
+    }
+
+    public double getProcessorSpeedinGHz() {
+        return processorSpeedinGHz; }
+
+    public void setProcessorSpeedinGHz(double processorSpeedinGHz) {
+        this.processorSpeedinGHz = processorSpeedinGHz; }
 
     public boolean isSolidStateDrive() {
-        return SolidStateDrive; }
+        return solidStateDrive; }
 
     public void setSolidStateDrive(boolean solidStateDrive) {
-        SolidStateDrive = solidStateDrive; }
+        solidStateDrive = solidStateDrive; }
 }
